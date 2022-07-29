@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="224.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.SubidaSueldoController">
+   <children>
+      <Label layoutX="94.0" layoutY="44.0" text="Introduce el DNI del vendedor" />
+      <TextField fx:id="txtfDNI" layoutX="266.0" layoutY="40.0" prefHeight="25.0" prefWidth="161.0" />
+      <Separator layoutX="80.0" layoutY="75.0" prefWidth="350.0" />
+      <Label layoutX="46.0" layoutY="91.0" text="Introduce la variación del sueldo (en %)" />
+      <TextField fx:id="txtfVariacion" layoutX="266.0" layoutY="87.0" prefHeight="25.0" prefWidth="161.0" />
+      <Button fx:id="btnAplicarSueldo" layoutX="297.0" layoutY="151.0" mnemonicParsing="false" onAction="#aplicarSubidaSueldo" prefHeight="25.0" prefWidth="130.0" text="Aplicar" />
+      <Button fx:id="btnCancelar" layoutX="80.0" layoutY="151.0" mnemonicParsing="false" onAction="#cancelarAccion" prefHeight="25.0" prefWidth="130.0" text="Cancelar" />
+   </children>
+</AnchorPane>

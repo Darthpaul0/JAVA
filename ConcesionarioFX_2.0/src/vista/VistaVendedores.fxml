@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaVendedoresController">
+   <children>
+      <TableView fx:id="tblVendedores" layoutX="26.0" layoutY="25.0" prefHeight="281.0" prefWidth="549.0">
+         <columns>
+            <TableColumn fx:id="colNombre" prefWidth="142.0" text="Nombre" />
+            <TableColumn fx:id="colApellidos" prefWidth="213.0" text="Apellidos" />
+            <TableColumn fx:id="colDNI" prefWidth="105.0" text="DNI" />
+            <TableColumn fx:id="colSueldo" prefWidth="88.0" text="Sueldo" />
+         </columns>
+      </TableView>
+      <MenuButton fx:id="menubtnVendedores" layoutX="26.0" layoutY="324.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="114.0" text="Vendedores">
+         <items>
+            <MenuItem fx:id="btnitemContratar" mnemonicParsing="false" onAction="#contratarVendedor" text="Contratar vendedor" />
+            <MenuItem fx:id="btnitemDespedir" mnemonicParsing="false" onAction="#despedirVendedor" text="Despedir vendedor" />
+            <MenuItem fx:id="btnitemModificar" mnemonicParsing="false" onAction="#modificarVendedor" text="Modificar vendedor" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="menubtnVendedores1" layoutX="244.0" layoutY="324.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="114.0" text="Salarios">
+         <items>
+            <MenuItem fx:id="subitemSubirSueldo1" mnemonicParsing="false" onAction="#subirSueldo" text="Subir sueldo" />
+            <MenuItem fx:id="subitemBajarSueldo1" mnemonicParsing="false" onAction="#bajarSueldo" text="Bajar sueldo" />
+            <MenuItem fx:id="subitemPlus1" mnemonicParsing="false" onAction="#darPlus" text="Dar un plus" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="menubtnVendedores11" layoutX="461.0" layoutY="324.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="114.0" text="Vacaciones">
+         <items>
+            <MenuItem fx:id="subitemModificarVacaciones11" mnemonicParsing="false" onAction="#modificarVacaciones" text="Modificar vacaciones" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

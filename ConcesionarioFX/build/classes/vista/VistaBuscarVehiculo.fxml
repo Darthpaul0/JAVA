@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.BuscarVehiculoController">
+   <children>
+      <TableView fx:id="tblVehiculos" layoutX="41.0" layoutY="73.0" prefHeight="281.0" prefWidth="519.0">
+        <columns>
+          <TableColumn fx:id="colMarca" prefWidth="142.0" text="MARCA" />
+            <TableColumn fx:id="colModelo" prefWidth="213.0" text="MODELO" />
+            <TableColumn fx:id="colPrecio" prefWidth="162.0" text="PRECIO" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtfFiltro" layoutX="346.0" layoutY="29.0" onKeyReleased="#filtrarMarca" />
+      <Label layoutX="106.0" layoutY="33.0" text="Introduce la marca del vehículo para filtrar" />
+   </children>
+</AnchorPane>

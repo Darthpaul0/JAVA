@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holajavafx.FXMLNuevoController">
+   <children>
+      <Label fx:id="lNombre" layoutX="100.0" layoutY="102.0" text="Nombre" />
+      <TextField fx:id="tfNombre" layoutX="168.0" layoutY="97.0" />
+      <Button fx:id="bAceptar" layoutX="168.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleAceptarAction" text="Aceptar" />
+      <Button fx:id="bCancelar" layoutX="262.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleCancelarAction" text="Cancelar" />
+   </children>
+</AnchorPane>

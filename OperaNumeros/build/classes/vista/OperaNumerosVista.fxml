@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="controlador.OperaNumerosController">
+   <children>
+      <Button fx:id="btnOperar" layoutX="232.0" layoutY="280.0" mnemonicParsing="false" onAction="#hacerOperacion" prefHeight="25.0" prefWidth="149.0" text="Operar" />
+      <Label layoutX="149.0" layoutY="107.0" text="Operando 1" />
+      <Label layoutX="151.0" layoutY="159.0" text="Operando2" />
+      <RadioButton fx:id="rdbtnSuma" layoutX="225.0" layoutY="209.0" mnemonicParsing="false" text="Sumar" />
+      <RadioButton fx:id="rdbtnMult" layoutX="225.0" layoutY="244.0" mnemonicParsing="false" text="Multiplicar" />
+      <RadioButton fx:id="rdbtnDiv" layoutX="332.0" layoutY="244.0" mnemonicParsing="false" text="Dividir" />
+      <RadioButton fx:id="rdbtnResta" layoutX="332.0" layoutY="211.0" mnemonicParsing="false" text="Restar" />
+      <TextField fx:id="txtfOp1" layoutX="232.0" layoutY="103.0" />
+      <TextField fx:id="txtfOp2" layoutX="232.0" layoutY="155.0" />
+      <Label layoutX="151.0" layoutY="342.0" text="RESULTADO" underline="true" />
+      <TextField fx:id="txtfResultado" layoutX="232.0" layoutY="338.0" />
+      <Separator layoutX="180.0" layoutY="190.0" prefWidth="200.0" />
+      <Separator layoutX="184.0" layoutY="324.0" prefWidth="200.0" />
+      <Label layoutX="100.0" layoutY="37.0" text="CALCULADORA SIMPLE" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

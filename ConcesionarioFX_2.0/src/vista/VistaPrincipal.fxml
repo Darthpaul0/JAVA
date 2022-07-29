@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaPrincipalController">
+   <children>
+      <AnchorPane layoutX="517.0" />
+      <Button fx:id="btnEconomia" layoutX="208.0" layoutY="276.0" mnemonicParsing="false" onAction="#verBalance" prefHeight="37.0" prefWidth="184.0" text="Economía" />
+      <Label layoutX="67.0" layoutY="55.0" text="Bienvenido a la aplicación del concesionario" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="42.0" layoutY="90.0" prefHeight="18.0" prefWidth="536.0" text="Le recordamos que debe cargar los datos predeterminados o bien los de la sesión anterior" textAlignment="CENTER" />
+      <Button fx:id="btnSalir" layoutX="472.0" layoutY="349.0" mnemonicParsing="false" onAction="#abandonarAplicacion" prefHeight="37.0" prefWidth="114.0" text="Salir" />
+      <MenuBar layoutY="-1.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Acciones">
+            <items>
+                  <MenuItem fx:id="subItemCargarPred" mnemonicParsing="false" onAction="#cargarDatosPredeterminados" text="Cargar predeterminados" />
+                  <MenuItem fx:id="subitemCargar" mnemonicParsing="false" onAction="#cargarDatos" text="Cargar" />
+              <MenuItem fx:id="subItemGuardar" mnemonicParsing="false" onAction="#guardarDatos" text="Guardar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarInfo" text="Información" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="menubtnVendedores" layoutX="208.0" layoutY="144.0" mnemonicParsing="false" onAction="#verVentanaVendedores" prefHeight="37.0" prefWidth="184.0" text="Gestionar vendedores" />
+      <Button fx:id="menubtnVehiculos" layoutX="208.0" layoutY="209.0" mnemonicParsing="false" onAction="#verVentanaVehiculos" prefHeight="37.0" prefWidth="184.0" text="Gestionar vehículos" />
+   </children>
+</AnchorPane>

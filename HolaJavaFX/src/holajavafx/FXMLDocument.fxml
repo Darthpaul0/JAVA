@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="holajavafx.FXMLDocumentController">
+    <children>
+        <Button fx:id="bAceptar" layoutX="33.0" layoutY="74.0" onAction="#handleButtonAction" text="Púlsame" />
+      <Label fx:id="lMensaje" layoutX="58.0" layoutY="128.0" text="¡Bienvenido a JavaFX!" visible="false" />
+      <TextField fx:id="tfNombre" layoutX="123.0" layoutY="77.0" onAction="#handleButtonAction" />
+      <MenuBar fx:id="mbMenu" prefHeight="22.0" prefWidth="320.0">
+        <menus>
+          <Menu fx:id="mAcciones" text="_Acciones">
+            <items>
+              <MenuItem fx:id="miPulsar" onAction="#handleButtonAction" text="_Pulsar">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="miInicializar" onAction="#inicializar" text="_Inicializar">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem fx:id="miNuevo" mnemonicParsing="false" onAction="#handleNuevoAction" text="Nuevo" />
+            </items>
+          </Menu>
+          <Menu fx:id="mAyuda" mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="miAcerdaDe" mnemonicParsing="false" onAction="#handleAcercaDeAction" text="Acerda de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    </children>
+</AnchorPane>

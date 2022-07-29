@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ContratarVendedorController">
+   <children>
+      <Label layoutX="49.0" layoutY="27.0" text="Nombre" textAlignment="CENTER" />
+      <TextField fx:id="txtfNombre" layoutX="119.0" layoutY="24.0" />
+      <Label layoutX="49.0" layoutY="61.0" text="Apellidos" textAlignment="CENTER" />
+      <TextField fx:id="txtfApellidos" layoutX="119.0" layoutY="58.0" />
+      <Label layoutX="49.0" layoutY="97.0" text="Edad" textAlignment="CENTER" />
+      <TextField fx:id="txtfEdad" layoutX="119.0" layoutY="94.0" />
+      <Label layoutX="49.0" layoutY="130.0" text="Estudios" textAlignment="CENTER" />
+      <TextField fx:id="txtfEstudios" layoutX="119.0" layoutY="127.0" />
+      <Label layoutX="21.0" layoutY="208.0" text="Experiencia (años)" textAlignment="CENTER" />
+      <TextField fx:id="txtfExperiencia" layoutX="42.0" layoutY="227.0" prefHeight="25.0" prefWidth="59.0" />
+      <Label layoutX="233.0" layoutY="208.0" text="Salario €" textAlignment="CENTER" />
+      <TextField fx:id="txtfSalario" layoutX="226.0" layoutY="227.0" prefHeight="25.0" prefWidth="59.0" />
+      <Label layoutX="126.0" layoutY="208.0" text="Vacaciones (días)" textAlignment="CENTER" />
+      <TextField fx:id="txtfVacaciones" layoutX="136.0" layoutY="227.0" prefHeight="25.0" prefWidth="60.0" />
+      <Label layoutX="49.0" layoutY="166.0" text="DNI" textAlignment="CENTER" />
+      <TextField fx:id="txtfDNI" layoutX="119.0" layoutY="163.0" />
+      <Separator layoutX="58.0" layoutY="196.0" prefWidth="200.0" />
+      <Button fx:id="btnContratarAceptar" layoutX="188.0" layoutY="272.0" mnemonicParsing="false" onAction="#agregarVendedor" prefHeight="25.0" prefWidth="100.0" text="Aceptar" />
+      <Button fx:id="btnCancelar" layoutX="45.0" layoutY="272.0" mnemonicParsing="false" onAction="#cancelarAccion" prefHeight="25.0" prefWidth="100.0" text="Cancelar" />
+   </children>
+</AnchorPane>

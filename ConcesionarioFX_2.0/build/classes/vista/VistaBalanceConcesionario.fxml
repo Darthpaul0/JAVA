@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="230.0" prefWidth="302.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="controlador.BalanceConcesionarioController">
+   <children>
+      <Label layoutX="48.0" layoutY="78.0" text="INGRESOS:" />
+      <Label layoutX="48.0" layoutY="106.0" text="GASTOS:" />
+      <Label layoutX="48.0" layoutY="135.0" text="BENEFICIO:" />
+      <Label layoutX="101.0" layoutY="30.0" text="BALANCE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="51.0" layoutY="64.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

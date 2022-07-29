@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="controlador.TablaPersonasController">
+   <children>
+      <Button fx:id="btnAgregar" layoutX="54.0" layoutY="234.0" mnemonicParsing="false" onAction="#agregarPersona" prefHeight="25.0" prefWidth="149.0" text="Agregar Persona" />
+      <Label layoutX="54.0" layoutY="52.0" text="Nombre" />
+      <Separator layoutX="54.0" layoutY="69.0" prefHeight="2.0" prefWidth="44.0" />
+      <TextField fx:id="txtfNombre" layoutX="54.0" layoutY="74.0" />
+      <Label layoutX="54.0" layoutY="108.0" text="Apellidos" />
+      <Separator layoutX="54.0" layoutY="125.0" prefHeight="2.0" prefWidth="44.0" />
+      <TextField fx:id="txtfApellidos" layoutX="54.0" layoutY="130.0" />
+      <Label layoutX="54.0" layoutY="158.0" text="Edad" />
+      <Separator layoutX="54.0" layoutY="175.0" prefHeight="2.0" prefWidth="44.0" />
+      <TextField fx:id="txtfEdad" layoutX="54.0" layoutY="180.0" />
+      <Label layoutX="190.0" layoutY="14.0" text="TABLA DE PERSONAS" textAlignment="CENTER">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblPersonas" layoutX="242.0" layoutY="52.0" onMouseClicked="#seleccionarPersona" prefHeight="296.0" prefWidth="337.0">
+        <columns>
+          <TableColumn fx:id="tblcNombre" prefWidth="112.0" text="Nombre" />
+          <TableColumn fx:id="tblcApellidos" prefWidth="114.0" text="Apellidos" />
+            <TableColumn fx:id="tblcEdad" prefWidth="110.0" text="Edad" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnModificar" layoutX="54.0" layoutY="278.0" mnemonicParsing="false" onAction="#modificarPersona" prefHeight="25.0" prefWidth="149.0" text="Modificar Persona" />
+      <Button fx:id="btnEliminar" layoutX="54.0" layoutY="323.0" mnemonicParsing="false" onAction="#eliminarPersona" prefHeight="25.0" prefWidth="149.0" text="Eliminar Persona" />
+      <Separator layoutX="107.0" layoutY="268.0" prefHeight="2.0" prefWidth="44.0" />
+      <Separator layoutX="107.0" layoutY="313.0" prefHeight="2.0" prefWidth="44.0" />
+   </children>
+</AnchorPane>
